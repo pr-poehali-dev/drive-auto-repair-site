@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({ backgroundImage }) => {
       </div>
       
       <div className="relative z-10 text-center pb-8">
-        <p className="text-gray-400 text-sm font-medium">ул. Офицерская 26</p>
+        <p className="text-white text-sm font-medium text-shadow-black">ул. Офицерская 26</p>
       </div>
     </header>
   );

@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ backgroundImage }) => {
           <span className="text-drive-red">ДРАЙВ</span>
         </div>
         
-        <a href="tel:+79966215396" className="text-white text-lg md:text-xl hover:text-drive-red transition-colors duration-300">
+        <a href="tel:+79966215396" className="text-white text-lg md:text-xl font-bold text-shadow-black hover:text-drive-red transition-colors duration-300">
           +7 (996) 621-53-96
         </a>
       </div>
@@ -42,7 +42,7 @@ const Header: React.FC<HeaderProps> = ({ backgroundImage }) => {
       </div>
       
       <div className="relative z-10 text-center pb-8">
-        <p className="text-white text-sm font-medium">ул. Офицерская 26</p>
+        <p className="text-gray-400 text-sm font-medium">ул. Офицерская 26</p>
       </div>
     </header>
   );

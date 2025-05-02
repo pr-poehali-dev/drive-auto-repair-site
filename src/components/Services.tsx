@@ -50,13 +50,22 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="service-item">
-              <img src={service.image} alt={service.title} className="service-image" />
+              <div className="aspect-w-16 aspect-h-9 mb-4">
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-full object-cover rounded-md"
+                />
+              </div>
               <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
               <p className="text-drive-gray text-sm mb-3">{service.description}</p>
               <div className="flex flex-col mt-auto">
-                <p className="price-tag mb-3">{service.price}</p>
+                <p className="text-drive-red font-bold mb-3">{service.price}</p>
                 <p className="text-drive-gray text-xs mb-4">*зависит от сложности выполнения работ</p>
-                <a href="tel:+79966215396" className="call-button">
+                <a 
+                  href="tel:+79966215396" 
+                  className="bg-drive-red text-white font-medium py-2 px-4 rounded-md text-center hover:bg-red-700 transition-colors duration-300"
+                >
                   Позвонить
                 </a>
               </div>

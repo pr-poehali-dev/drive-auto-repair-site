@@ -8,7 +8,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ backgroundImage }) => {
   return (
-    <header className="relative w-full h-screen min-h-[600px] flex flex-col justify-between">
+    <header className="relative w-full h-[80vh] min-h-[480px] flex flex-col justify-between">
       <div 
         className="absolute inset-0 bg-black bg-opacity-35 z-0"
         style={{
@@ -30,7 +30,7 @@ const Header: React.FC<HeaderProps> = ({ backgroundImage }) => {
       </div>
       
       <div className="relative z-10 flex flex-col items-center justify-center flex-grow text-center px-4">
-        <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
+        <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-shadow-black">
           Кузовной ремонт в Тольятти
         </h1>
         <a 
@@ -41,8 +41,8 @@ const Header: React.FC<HeaderProps> = ({ backgroundImage }) => {
         </a>
       </div>
       
-      <div className="relative z-10 text-center pb-6">
-        <p className="text-gray-300 text-sm">ул. Офицерская 26</p>
+      <div className="relative z-10 text-center pb-8">
+        <p className="text-white text-sm font-medium">ул. Офицерская 26</p>
       </div>
     </header>
   );
